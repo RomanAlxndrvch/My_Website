@@ -8,13 +8,17 @@ $color-white: #fff;
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'lato', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.8;
   color: #2b262d;
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -33,49 +37,40 @@ body {
   position: relative;
 }
 
-.logo_box {
-  position: absolute;
-  top: 20px;
-}
-
-.logo {
-  height: 90px;
-}
-
 .navbar {
   display: flex;
   flex-direction: row-reverse;
   justify-content: right;
-  padding-top: 5px;
-  padding-right: 20px;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
 }
 
 .button {
   text-align: center;
   cursor: pointer;
   font-family: 'Dongle', sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
-  height: 40px;
-  width: 100px;
-  margin: 40px;
+  height: 4rem;
+  width: 11rem;
+  margin: 4rem;
   color: #fff;
   background: rgba(0, 0, 0, 0);
   border: none;
-  border-bottom: 3px solid #fff;
+  border-bottom: 0.3rem solid #fff;
   transition: all 0.2s;
 }
 .button:hover {
-  transform: translateY(-4px);
+  transform: translateY(-0.4rem);
 }
 .button:active {
-  transform: translateY(-1px);
+  transform: translateY(-0.1rem);
 }
 
 .text-box {
   position: absolute;
-  top: 200px;
-  left: 100px;
+  top: 20rem;
+  left: 10rem;
 }
 .text {
   backface-visibility: hidden;
@@ -94,20 +89,20 @@ body {
   font-family: 'lato', sans-serif;
 }
 .hello {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 300;
 }
 .name {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 6rem;
   letter-spacing: 3px;
 }
 .occupation {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 300;
 }
 .color {
-  padding: 0px 70px 0px 70px;
+  padding: 0rem 7rem 0rem 7rem;
   color: black;
   background-color: #fff;
   font-weight: 500;
@@ -119,7 +114,7 @@ body {
 @keyframes moveToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   100% {
@@ -130,7 +125,7 @@ body {
 @keyframes moveToBottomNav {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-10rem);
   }
 
   100% {
@@ -141,7 +136,7 @@ body {
 @keyframes moveInBottomBtn {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
 
   100% {
@@ -156,10 +151,10 @@ body {
   font-weight: 500;
   background-color: #fff;
   color: #000;
-  border-radius: 100px;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin-top: 100px;
+  border-radius: 10rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 10rem;
   user-select: none;
   transition: all 0.1s;
   cursor: pointer;
@@ -170,7 +165,7 @@ body {
   animation-fill-mode: backwards;
 }
 .download_btn {
-  margin-left: 110px;
+  margin-left: 11rem;
 }
 
 .header_btn::after {
@@ -179,7 +174,7 @@ body {
   background-color: #fff;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -196,10 +191,10 @@ body {
 
 .header_btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 .header_btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
