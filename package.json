@@ -7,8 +7,5 @@
     "scss": "node-sass scss/main.scss css/style.css -w"
   },
   "author": "Roman",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "license": "ISC"
 }
