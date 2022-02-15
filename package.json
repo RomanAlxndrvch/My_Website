@@ -1,14 +1,25 @@
 {
   "name": "mywebsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass scss/main.scss css/style.css -w"
+    "watch:sass": "sass scss/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanAlxndrvch/My_Website.git"
   },
   "author": "Roman",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanAlxndrvch/My_Website/issues"
+  },
+  "homepage": "https://github.com/RomanAlxndrvch/My_Website#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.7"
   }
 }
