@@ -1,0 +1,39 @@
+// font-family: 'Bebas Neue', cursive;
+.header {
+  grid-column: page-start/page-end;
+
+  position: relative;
+  backface-visibility: hidden;
+
+  &__content {
+    animation: moveFromLeft 2s ease-out;
+    padding: 30rem 3rem;
+    width: 100rem;
+  }
+
+  &__text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+
+    &-color {
+      color: var(--color-red);
+    }
+  }
+
+  &__buttons {
+    margin-top: 10rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: moveFromBottom 2s ease-out;
+  }
+}
