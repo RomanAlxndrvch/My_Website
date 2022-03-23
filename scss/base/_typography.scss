@@ -1,0 +1,45 @@
+.heading-1 {
+  font-family: 'Source Serif Pro', sans-serif;
+  color: var(--color-olive);
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 5.7rem;
+}
+
+.heading-2 {
+  font-family: 'Source Serif Pro', sans-serif;
+  color: var(--color-olive);
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 5.7rem;
+}
+
+.heading-3 {
+  font-family: 'Source Serif Pro', sans-serif;
+  color: var(--color-olive);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 5.7rem;
+}
+
+.section-name {
+  font-family: 'Source Serif Pro', sans-serif;
+  color: var(--color-olive);
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.7rem;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+  padding: 10rem 5rem 5rem 5rem;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+}

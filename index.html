@@ -7,70 +7,65 @@
     <title>My Web Site</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
-    <div class="grid-container">
-      <header class="header">
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/bg-video.mp4" type="video/mp4" />
-            Your browser is not supported!
-          </video>
+  <body class="grid-container">
+    <header class="header">
+      <nav class="navigation navigation__header">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__content">
+        <div class="header__gradient-olive"></div>
+        <div class="header__gradient-brown"></div>
+
+        <div class="header__content-left">
+          <h1 class="heading-1 header__content-name">
+            Hi, I'm Roman Troian & I'm a Frontend Web Developer.
+          </h1>
+
+          <p class="header__content-info">
+            I build quality responsive websites,clean user interfaces and rich
+            interactive web apps. <br />
+            Targeting CSS\HTML , JavaScript and React. <br />
+          </p>
+          <a href="#" class="btn header__content-btn">Download my resume</a>
         </div>
 
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About Me</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Projects</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact Me</a>
-            </li>
-          </ul>
-        </nav>
+        <img
+          src="img/header_img.jpg"
+          alt="Header Image"
+          class="header__content-img"
+        />
+      </div>
+    </header>
 
-        <div class="header__content">
-          <div class="header__text">
-            Hello <br />
+    <section class="about">
+      <h1 class="section-name">About</h1>
+      <div class="about__content">
+        <div class="about__info">INFO</div>
+        <div class="about__skills">SKILLS</div>
+      </div>
+    </section>
 
-            My name's <span class="header__text-color">Roman Troian</span>
-            <br />
-
-            and I'm a frontend
-            <span class="header__text-color">web developer</span>
-          </div>
-
-          <div class="header__buttons">
-            <a href="#" class="btn btn-white">Download my resume</a>
-            <a href="#" class="btn btn-white">Open my resume</a>
-          </div>
-        </div>
-
-        <div class="header__scroll">
-          <div class="scrollDown__btn">
-            <a href="#" class="scrollDown__link"></a>
-            <svg class="scrollDown__icon">
-              <use
-                xlink:href="img/sprite.svg#icon-chevron-with-circle-down"
-              ></use>
-            </svg>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <section class="about"></section>
-      </main>
-    </div>
+    <main>
+      <section class="about"></section>
+    </main>
   </body>
 </html>
