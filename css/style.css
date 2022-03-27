@@ -254,6 +254,7 @@ body > * {
 .about__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
   padding: 0rem 5rem 5rem 5rem;
   gap: 2rem;
 }
@@ -279,16 +280,18 @@ body > * {
 
 .info {
   grid-column: 1/2;
+  grid-row: 1/2;
 }
 .info > * {
   padding: 0 3rem 0 3rem;
 }
 .info p:last-child {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .skills {
   grid-column: 2/3;
+  grid-row: 1/2;
 }
 .skills__container {
   margin: 0 1rem 3rem 1rem;
@@ -317,6 +320,7 @@ body > * {
 }
 .skills__inprocess {
   display: flex;
+  margin-bottom: 3rem;
 }
 .skills__process {
   margin-left: 3rem;

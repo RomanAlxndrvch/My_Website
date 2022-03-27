@@ -2,6 +2,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
 
     padding: 0rem 5rem 5rem 5rem;
     gap: 2rem;
@@ -33,18 +34,20 @@
 
 .info {
   grid-column: 1/2;
+  grid-row: 1/2;
 
   & > * {
     padding: 0 3rem 0 3rem;
   }
 
   p:last-child {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 }
 
 .skills {
   grid-column: 2/3;
+  grid-row: 1/2;
 
   &__container {
     margin: 0 1rem 3rem 1rem;
@@ -78,6 +81,7 @@
 
   &__inprocess {
     display: flex;
+    margin-bottom: 3rem;
   }
 
   &__process {
