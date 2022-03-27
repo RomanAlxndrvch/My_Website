@@ -321,6 +321,7 @@ body > * {
 .skills__process {
   margin-left: 3rem;
   width: 13rem;
+  transform: translateY(14px);
 }
 
 /*# sourceMappingURL=style.css.map */
