@@ -50,9 +50,20 @@
   grid-row: 1/2;
 
   &__container {
+    display: flex;
+  }
+
+  &__current {
+    height: min-content;
+    margin-left: 1rem;
+
+    transform: translateY(1.9rem);
+  }
+
+  &__icons {
     margin: 0 1rem 3rem 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     gap: 2rem;
   }
 
@@ -73,20 +84,22 @@
 
   &__icon {
     height: 4rem;
+    width: 4rem;
 
     &-1 {
       height: 3rem;
+      width: 3rem;
     }
   }
 
   &__inprocess {
     display: flex;
-    margin-bottom: 3rem;
+    margin: 0 1rem 3rem 1rem;
+    gap: 2rem;
   }
 
-  &__process {
-    margin-left: 3rem;
-    width: 13rem;
-    transform: translateY(14px);
+  &__progress {
+    margin-left: 1rem;
+    transform: translateY(1.4rem);
   }
 }

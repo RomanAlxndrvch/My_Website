@@ -294,9 +294,17 @@ body > * {
   grid-row: 1/2;
 }
 .skills__container {
+  display: flex;
+}
+.skills__current {
+  height: min-content;
+  margin-left: 1rem;
+  transform: translateY(1.9rem);
+}
+.skills__icons {
   margin: 0 1rem 3rem 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   gap: 2rem;
 }
 .skills__box {
@@ -314,18 +322,20 @@ body > * {
 }
 .skills__icon {
   height: 4rem;
+  width: 4rem;
 }
 .skills__icon-1 {
   height: 3rem;
+  width: 3rem;
 }
 .skills__inprocess {
   display: flex;
-  margin-bottom: 3rem;
+  margin: 0 1rem 3rem 1rem;
+  gap: 2rem;
 }
-.skills__process {
-  margin-left: 3rem;
-  width: 13rem;
-  transform: translateY(14px);
+.skills__progress {
+  margin-left: 1rem;
+  transform: translateY(1.4rem);
 }
 
 /*# sourceMappingURL=style.css.map */
