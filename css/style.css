@@ -385,4 +385,9 @@ body > * {
   background-color: var(--color-white);
 }
 
+.project__img {
+  width: 29rem;
+  height: 25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
