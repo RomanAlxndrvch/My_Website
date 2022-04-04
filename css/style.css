@@ -479,6 +479,8 @@ body > * {
   color: var(--color-olive);
   display: block;
   padding: 0.5rem;
+  background-color: var(--color-white);
+  border-radius: 5px;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-olive) 50%);
   background-size: 235%;
   transition: all 0.3s;
