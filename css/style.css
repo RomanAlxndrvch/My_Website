@@ -2,6 +2,7 @@
   --color-olive: #3a5f56;
   --color-dark: #292c32;
   --color-white: #f4f3f0;
+  --color-red: #c92a2a;
 }
 
 @keyframes moveFromLeft {
@@ -56,7 +57,7 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
-  color: var(--color-black);
+  color: var(--color-dark);
 }
 body > * {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
@@ -118,14 +119,12 @@ body > * {
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.5rem;
-  width: 25rem;
-  height: 4rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-olive);
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   display: inline-block;
   border-radius: 6px;
   transition: all 0.2s;
@@ -156,6 +155,91 @@ body > * {
   z-index: -1;
   transition: all 0.4s;
   opacity: 0.4;
+}
+
+.btn__form {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-olive);
+  padding: 1rem 4rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  display: flex;
+  order: 1;
+  justify-content: center;
+  align-items: center;
+}
+.btn__form::before {
+  content: " ";
+  display: inline-block;
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-left: 0.7rem;
+  order: 2;
+  background-color: var(--color-white);
+  -webkit-mask-image: url(../img/send.svg);
+  -webkit-mask-size: cover;
+  mask-image: url(../img/send.svg);
+  mask-size: cover;
+}
+.btn__form:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.6);
+}
+.btn__form:hover::after {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
+}
+.btn__form:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+}
+.btn__form::after {
+  background-color: var(--color-olive);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  opacity: 0.4;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 100%;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 132.7em) {
+  .list__item {
+    flex: 0 0 50%;
+  }
+}
+.list__item::before {
+  content: " ";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.7rem;
+  background-color: var(--color-olive);
+  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-size: cover;
+  mask-image: url(../img/chevron-thin-right.svg);
+  mask-size: cover;
 }
 
 .navigation {
@@ -302,33 +386,6 @@ body > * {
 .general {
   margin: 3rem 0 1rem 0;
 }
-.general .list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.general .list__item {
-  flex: 0 0 100%;
-  margin-bottom: 0.7rem;
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 132.7em) {
-  .general .list__item {
-    flex: 0 0 50%;
-  }
-}
-.general .list__item::before {
-  content: " ";
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.7rem;
-  background-color: var(--color-olive);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
-  -webkit-mask-size: cover;
-  mask-image: url(../img/chevron-thin-right.svg);
-  mask-size: cover;
-}
 
 .skills {
   grid-column: 2/3;
@@ -384,10 +441,137 @@ body > * {
 .projects {
   background-color: var(--color-white);
 }
+.projects__box {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
 
+.project {
+  transition: all 0.5s;
+  background-color: #fff;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 35rem;
+}
+.project__heading {
+  padding-left: 3rem;
+}
+.project p {
+  padding: 0 3rem 2rem 3rem;
+  color: var(--color-olive);
+}
 .project__img {
-  width: 29rem;
-  height: 25rem;
+  width: 35rem;
+  height: auto;
+}
+.project__links {
+  padding: 0 0 3rem 3rem;
+  display: flex;
+  gap: 3rem;
+}
+.project .link:link,
+.project .link:visited {
+  text-decoration: none;
+  color: var(--color-olive);
+  display: block;
+  padding: 0.5rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-olive) 50%);
+  background-size: 235%;
+  transition: all 0.3s;
+}
+.project .link:link:hover, .project .link:link:active,
+.project .link:visited:hover,
+.project .link:visited:active {
+  background-position: 100%;
+  color: white;
+}
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact {
+  margin-bottom: 10rem;
+}
+.contact__content {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.contacts {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}
+.contacts__box {
+  display: flex;
+  width: 25rem;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+.contacts__icon {
+  width: 3rem;
+  height: 3rem;
+  justify-self: flex-start;
+}
+.contacts__link:link, .contacts__link:visited {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.mail {
+  flex: 1;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--color-white);
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid transparent;
+  display: block;
+  width: 40%;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--color-olive);
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid var(--color-red);
+}
+.form__input::-webkit-input-placeholder {
+  color: var(--color-olive);
+}
+.form__message {
+  height: 15rem;
+  width: 40%;
+  resize: none;
+  margin-bottom: 0;
+}
+.form__label {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
 }
 
 /*# sourceMappingURL=style.css.map */
