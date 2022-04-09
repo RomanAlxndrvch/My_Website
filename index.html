@@ -13,20 +13,20 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="grid-container">
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navigation navigation__header">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
+            <a href="#header" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
+            <a href="#section-about" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Projects</a>
+            <a href="#section-project" class="navigation__link">Projects</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+            <a href="#section-contact" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
       </div>
     </header>
     <main>
-      <section class="about">
+      <section class="about" id="section-about">
         <h1 class="section-name">About</h1>
         <div class="about__content">
           <div class="about__gradient-olive"></div>
@@ -177,7 +177,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="section-project">
         <div class="section-name">Projects</div>
         <div class="projects__box">
           <div class="project">
@@ -191,7 +191,7 @@
                 class="link"
                 >GitHub</a
               >
-              <a href="#" class="link">Home </a>
+              <a href="#header" class="link">Home </a>
             </div>
           </div>
 
@@ -227,7 +227,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="section-contact">
         <div class="section-name">Contacts</div>
         <div class="contact__content">
           <div class="contacts">
@@ -304,5 +304,7 @@
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
