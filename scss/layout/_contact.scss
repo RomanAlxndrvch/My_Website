@@ -1,10 +1,15 @@
 .contact {
-  margin-bottom: 10rem;
+  // margin-bottom: 10rem;
 
   &__content {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    padding-bottom: 20rem;
+
+    @media only screen and (min-width: 60.7em) {
+      padding-top: 9rem;
+    }
   }
 }
 

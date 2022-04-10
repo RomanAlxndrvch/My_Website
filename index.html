@@ -12,25 +12,36 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="grid-container">
-    <header class="header" id="header">
-      <nav class="navigation navigation__header">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#header" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#section-about" class="navigation__link">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#section-project" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#section-contact" class="navigation__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
 
+  <body class="grid-container">
+    <nav class="navigation navigation__header">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            href="#section-header"
+            class="navigation__link section-header navigation__link-active"
+            >Home</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#section-about" class="navigation__link section-about"
+            >About</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#section-project" class="navigation__link section-project"
+            >Projects</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#section-contact" class="navigation__link section-contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- <main> -->
+    <section class="header" id="section-header">
       <div class="header__content">
         <div class="header__gradient-olive"></div>
         <div class="header__gradient-brown"></div>
@@ -58,252 +69,246 @@
           class="header__content-img"
         />
       </div>
-    </header>
-    <main>
-      <section class="about" id="section-about">
-        <h1 class="section-name">About</h1>
-        <div class="about__content">
-          <div class="about__gradient-olive"></div>
-          <div class="info">
-            <div class="about__header">
-              <svg class="about__icon">
-                <use xlink:href="img/sprite.svg#icon-info"></use>
-              </svg>
-              <h2 class="heading-2">Information</h2>
-            </div>
-            <p>
-              Hello. <br />
-              My name is Roman Trioan and Im a Frontend Web Developer using web
-              technologies to build products and focusing on solving problems
-              for different niches and different indusries using the power of
-              technology. <br />
-              I will love to hear from you. Whether its a
-              project,job,opportunity or just a chat. <br />
-              Feel free to contact me.
-            </p>
+    </section>
 
-            <div class="general">
-              <h3 class="heading-3">General Information</h3>
-              <ul class="list">
-                <li class="list__item">Located in Canada,Alberta,Lethbridge</li>
-                <li class="list__item">
-                  Speak 3 languages : English,Ukrainian,Russian
-                </li>
-                <li class="list__item">Self-taught web developer.</li>
-                <li class="list__item">Courses I done : first,second,third.</li>
-                <li class="list__item">
-                  Hobbies :Computers,Video games,Cooking.
-                </li>
-                <li class="list__item">Was born 04.12.1994 (28 years old)</li>
-              </ul>
+    <section class="about" id="section-about">
+      <h1 class="section-name">About</h1>
+      <div class="about__content">
+        <div class="about__gradient-olive"></div>
+        <div class="info">
+          <div class="about__header">
+            <svg class="about__icon">
+              <use xlink:href="img/sprite.svg#icon-info"></use>
+            </svg>
+            <h2 class="heading-2">Information</h2>
+          </div>
+          <p>
+            Hello. <br />
+            My name is Roman Trioan and Im a Frontend Web Developer using web
+            technologies to build products and focusing on solving problems for
+            different niches and different indusries using the power of
+            technology. <br />
+            I will love to hear from you. Whether its a project,job,opportunity
+            or just a chat. <br />
+            Feel free to contact me.
+          </p>
+
+          <div class="general">
+            <h3 class="heading-3">General Information</h3>
+            <ul class="list">
+              <li class="list__item">Located in Canada,Alberta,Lethbridge</li>
+              <li class="list__item">
+                Speak 3 languages : English,Ukrainian,Russian
+              </li>
+              <li class="list__item">Self-taught web developer.</li>
+              <li class="list__item">Courses I done : first,second,third.</li>
+              <li class="list__item">
+                Hobbies :Computers,Video games,Cooking.
+              </li>
+              <li class="list__item">Was born 04.12.1994 (28 years old)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="about__header">
+            <svg class="about__icon">
+              <use xlink:href="img/sprite.svg#icon-laptop"></use>
+            </svg>
+            <h2 class="heading-2">Skills</h2>
+          </div>
+
+          <div class="skills__icons">
+            <div class="skills__current heading-3">Current:</div>
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-html5"></use>
+              </svg>
+              <p>HTML</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-css3"></use>
+              </svg>
+              <p>CSS</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-sass"></use>
+              </svg>
+              <p>SCSS</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-javascript"></use>
+              </svg>
+              <p>JavaScript</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-react"></use>
+              </svg>
+              <p>React</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-git"></use>
+              </svg>
+              <p>Git</p>
+            </div>
+
+            <div class="skills__box">
+              <svg class="skills__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+              <p>Git Hub</p>
             </div>
           </div>
-          <div class="skills">
-            <div class="about__header">
-              <svg class="about__icon">
-                <use xlink:href="img/sprite.svg#icon-laptop"></use>
+
+          <div class="skills__inprocess">
+            <div class="heading-3 skills__progress">In Progress:</div>
+            <div class="skills__box-1">
+              <svg class="skills__icon-1">
+                <use xlink:href="img/sprite.svg#icon-typescript"></use>
               </svg>
-              <h2 class="heading-2">Skills</h2>
+              <p>TypeScript</p>
             </div>
-
-            <div class="skills__icons">
-              <div class="skills__current heading-3">Current:</div>
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-html5"></use>
-                </svg>
-                <p>HTML</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-css3"></use>
-                </svg>
-                <p>CSS</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-sass"></use>
-                </svg>
-                <p>SCSS</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-javascript"></use>
-                </svg>
-                <p>JavaScript</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-react"></use>
-                </svg>
-                <p>React</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-git"></use>
-                </svg>
-                <p>Git</p>
-              </div>
-
-              <div class="skills__box">
-                <svg class="skills__icon">
-                  <use xlink:href="img/sprite.svg#icon-github"></use>
-                </svg>
-                <p>Git Hub</p>
-              </div>
-            </div>
-
-            <div class="skills__inprocess">
-              <div class="heading-3 skills__progress">In Progress:</div>
-              <div class="skills__box-1">
-                <svg class="skills__icon-1">
-                  <use xlink:href="img/sprite.svg#icon-typescript"></use>
-                </svg>
-                <p>TypeScript</p>
-              </div>
-              <div class="skills__box-1">
-                <svg class="skills__icon-1">
-                  <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
-                </svg>
-                <p>NodeJS</p>
-              </div>
+            <div class="skills__box-1">
+              <svg class="skills__icon-1">
+                <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
+              </svg>
+              <p>NodeJS</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="projects" id="section-project">
-        <div class="section-name">Projects</div>
-        <div class="projects__box">
-          <div class="project">
-            <img src="img/project11.png" alt="Project 1" class="project__img" />
-            <h3 class="heading-3 project__heading">My Website</h3>
-            <p>This my own self made website. CSCC Vanilla JS</p>
+    <section class="projects" id="section-project">
+      <div class="section-name">Projects</div>
+      <div class="projects__box">
+        <div class="project">
+          <img src="img/project11.png" alt="Project 1" class="project__img" />
+          <h3 class="heading-3 project__heading">My Website</h3>
+          <p>This my own self made website. CSCC Vanilla JS</p>
 
-            <div class="project__links">
-              <a
-                href="https://github.com/RomanAlxndrvch/My_Website"
-                class="link"
-                >GitHub</a
-              >
-              <a href="#header" class="link">Home </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <img src="img/project11.png" alt="Project 1" class="project__img" />
-            <h3 class="heading-3 project__heading">My Website</h3>
-            <p>This my own self made website</p>
-
-            <div class="project__links">
-              <a
-                href="https://github.com/RomanAlxndrvch/My_Website"
-                class="link"
-                >GitHub</a
-              >
-              <a href="#" class="link">Home </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <img src="img/project11.png" alt="Project 1" class="project__img" />
-            <h3 class="heading-3 project__heading">My Website</h3>
-            <p>This my own self made website</p>
-
-            <div class="project__links">
-              <a
-                href="https://github.com/RomanAlxndrvch/My_Website"
-                class="link"
-                >GitHub</a
-              >
-              <a href="#" class="link">Home </a>
-            </div>
+          <div class="project__links">
+            <a href="https://github.com/RomanAlxndrvch/My_Website" class="link"
+              >GitHub</a
+            >
+            <a href="#header" class="link">Home </a>
           </div>
         </div>
-      </section>
 
-      <section class="contact" id="section-contact">
-        <div class="section-name">Contacts</div>
-        <div class="contact__content">
-          <div class="contacts">
-            <div class="contacts__box">
-              <svg class="contacts__icon">
-                <use xlink:href="img/sprite.svg#icon-gmail"></use>
-              </svg>
-              <a href="#" class="contacts__link">heyekzo@gmail.com</a>
-            </div>
+        <div class="project">
+          <img src="img/project11.png" alt="Project 1" class="project__img" />
+          <h3 class="heading-3 project__heading">My Website</h3>
+          <p>This my own self made website</p>
 
-            <div class="contacts__box">
-              <svg class="contacts__icon">
-                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-              </svg>
-              <a href="#" class="contacts__link">LinkedIn</a>
-            </div>
-
-            <div class="contacts__box">
-              <svg class="contacts__icon">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
-              </svg>
-              <a href="https://t.me/roman_alxndrvch" class="contacts__link"
-                >@roman_alxndrvch
-              </a>
-            </div>
-
-            <div class="contacts__box">
-              <svg class="contacts__icon">
-                <use xlink:href="img/sprite.svg#icon-github1"></use>
-              </svg>
-              <a href="https://github.com/RomanAlxndrvch" class="contacts__link"
-                >RomanAlxndrvch</a
-              >
-            </div>
-          </div>
-
-          <div class="mail">
-            <form action="#" class="form">
-              <div class="form__group">
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Full Name"
-                  id="name"
-                  required
-                />
-                <label for="name" class="form__label">Full Name</label>
-              </div>
-
-              <div class="form__group">
-                <input
-                  type="email"
-                  class="form__input"
-                  placeholder="Email Address"
-                  id="email"
-                  required
-                />
-                <label for="email" class="form__label">Email Address</label>
-              </div>
-
-              <div class="form__group">
-                <textarea
-                  placeholder="Message"
-                  class="form__input form__message"
-                  id="Message"
-                  required
-                ></textarea>
-                <label for="Message" class="form__label">Message</label>
-              </div>
-
-              <button class="btn__form">Send</button>
-            </form>
+          <div class="project__links">
+            <a href="https://github.com/RomanAlxndrvch/My_Website" class="link"
+              >GitHub</a
+            >
+            <a href="#" class="link">Home </a>
           </div>
         </div>
-      </section>
-    </main>
+
+        <div class="project">
+          <img src="img/project11.png" alt="Project 1" class="project__img" />
+          <h3 class="heading-3 project__heading">My Website</h3>
+          <p>This my own self made website</p>
+
+          <div class="project__links">
+            <a href="https://github.com/RomanAlxndrvch/My_Website" class="link"
+              >GitHub</a
+            >
+            <a href="#" class="link">Home </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="section-contact">
+      <div class="section-name">Contacts</div>
+      <div class="contact__content">
+        <div class="contacts">
+          <div class="contacts__box">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#icon-gmail"></use>
+            </svg>
+            <a href="#" class="contacts__link">heyekzo@gmail.com</a>
+          </div>
+
+          <div class="contacts__box">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            <a href="#" class="contacts__link">LinkedIn</a>
+          </div>
+
+          <div class="contacts__box">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+            <a href="https://t.me/roman_alxndrvch" class="contacts__link"
+              >@roman_alxndrvch
+            </a>
+          </div>
+
+          <div class="contacts__box">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#icon-github1"></use>
+            </svg>
+            <a href="https://github.com/RomanAlxndrvch" class="contacts__link"
+              >RomanAlxndrvch</a
+            >
+          </div>
+        </div>
+
+        <div class="mail">
+          <form action="#" class="form">
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Full Name"
+                id="name"
+                required
+              />
+              <label for="name" class="form__label">Full Name</label>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Email Address"
+                id="email"
+                required
+              />
+              <label for="email" class="form__label">Email Address</label>
+            </div>
+
+            <div class="form__group">
+              <textarea
+                placeholder="Message"
+                class="form__input form__message"
+                id="Message"
+                required
+              ></textarea>
+              <label for="Message" class="form__label">Message</label>
+            </div>
+
+            <button class="btn__form">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- </main> -->
 
     <script src="script.js"></script>
   </body>
