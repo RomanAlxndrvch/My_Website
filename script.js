@@ -1,27 +1,30 @@
-//implement NavBar menu highlight
 const section = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav ul li a');
 
-window.addEventListener('scroll', function (e) {
-  let current = '';
+//implement NavBar menu highlight
 
-  section.forEach(function (section) {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
+const pageObs = function (entries) {
+  const [entry] = entries;
 
-    if (scrollY >= sectionTop - sectionHeight / 2) {
-      current = section.getAttribute('id');
-    }
-  });
+  const current = entry.target.getAttribute('id');
 
-  navLi.forEach(function (li) {
-    li.classList.remove('navigation__link-active');
+  if (entry.isIntersecting) {
+    navLi.forEach(function (li) {
+      li.classList.remove('navigation__link-active');
 
-    if (li.classList.contains(current)) {
-      li.classList.add('navigation__link-active');
-    }
-  });
+      if (li.classList.contains(current)) {
+        li.classList.add('navigation__link-active');
+      }
+    });
+  }
+};
+
+const pageObserver = new IntersectionObserver(pageObs, {
+  root: null,
+  threshold: 0.8,
 });
+
+section.forEach((sec) => pageObserver.observe(sec));
 
 // Implement scrolling
 document
